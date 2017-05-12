@@ -1,7 +1,8 @@
 # Kvid
-Generates random id strings that can be used for user-visible tokens or ids.
+Kvid is a javascript library for generating random id strings that can be used for user-visible tokens or ids.
 
-It skips the letters O and 1 and the numbers 0 and l by default, because they are visually confusing in some fonts. 
+It skips the letters O and 1 and the numbers 0 and l by default, as they are visually confusing in some fonts and 
+kvid is designed to include the scenario of a user typing in a token by hand. 
   
 
 
@@ -11,14 +12,10 @@ It skips the letters O and 1 and the numbers 0 and l by default, because they ar
   
 ## Usage
 
-**NOTE:** an ES2015 version is published to NPM, not an ES5 version.
-(todo: perhaps publish kvid.es5)
-
 `npm install --save kvid`
 
 ```
 import buildVid from 'kvid';
 
-const myVid = buildVid(6);  // #  returns a random string of characters, eg "abc123" 
+const myVid = buildVid(6);  // #  returns something like  "abc123" 
 ```
-

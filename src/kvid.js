@@ -2,7 +2,8 @@ const DefaultCharBase = 'abcdefghijkmnpqrstuvwxyz23456789'; // skipping chars th
 const DefaultIdLength = 8;
 
 
-function buildRandomVid(size, opts={}) {
+function buildRandomVid(size, opts) {
+  opts = opts || {}; // tmp - babel experiment. cleanup
   const res = [];
   size = size || DefaultIdLength;
   const charBase = opts.charBase || DefaultCharBase; // todo: perhaps offer shortcut option to include the full 36 chars of lowercase letters and numbers
@@ -33,6 +34,9 @@ function _getRandomNumbers(size, charBaseLength) {
   }
 }
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 export default buildRandomVid;
 export {
