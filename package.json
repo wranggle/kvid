@@ -1,9 +1,11 @@
 {
   "name": "kvid",
-  "main": "src/index.js",
+  "main": "dist/kvid.js",
   "description": "Generate random, user-visible strings that can be used as tokens or ids",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
+    "prepublish": "npm run build",
+    "build": "browserify ./src/index.js -t babelify -p browserify-derequire --standalone kvid > ./dist/kvid.js",
     "test": "npm run mocha -R=spec ./test/**",
     "mocha": "mocha --compilers js:babel-register"
   },
@@ -14,6 +16,9 @@
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "browserify-derequire": "^0.9.4",
     "chai": "^3.5.0",
     "mocha": "^3.3.0"
   },
