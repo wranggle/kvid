@@ -2,7 +2,7 @@
   "name": "kvid",
   "main": "dist/kvid.js",
   "description": "Generate random, user-visible strings that can be used as tokens or ids",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "scripts": {
     "prepublish": "npm run build",
     "build": "browserify ./src/index.js -t babelify -p browserify-derequire --standalone kvid > ./dist/kvid.js",
