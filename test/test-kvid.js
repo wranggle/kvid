@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import buildRandomVid, { DefaultCharBase } from '../src/index.js';
+import buildRandomVid, { DefaultCharBase } from '../src/kvid.js';
 
 
 describe('Kvid', () => {

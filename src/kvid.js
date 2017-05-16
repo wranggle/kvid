@@ -34,6 +34,9 @@ function _getRandomNumbers(size, charBaseLength) {
   }
 }
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 export default buildRandomVid;
 export {
