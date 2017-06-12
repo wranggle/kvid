@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const path = require('path');
-const basicProductionBuild = require('../../spanggle-dev-support/lib/build-support/basic-production-build.js');
+const basicProductionBuild = require('../../spanggle-dev-support/lib/js-build.js');
 
 
 basicProductionBuild({
