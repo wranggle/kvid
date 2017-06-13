@@ -56,10 +56,6 @@ function _getRandomNumbers(size, charBaseLength) {
   }
 }
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 exports.default = buildRandomVid;
 exports.DefaultCharBase = DefaultCharBase;
 
