@@ -6,5 +6,6 @@ const basicProductionBuild = require('../../spanggle-dev-support/lib/js-build.js
 basicProductionBuild({
   projectDir: path.resolve(__dirname, '..'),
   baseName: 'kvid',
-  standalone: 'kvid'
+  standalone: 'kvid',
+  derequire: true
 });

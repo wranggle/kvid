@@ -3,7 +3,7 @@ const DefaultIdLength = 8;
 
 
 function buildRandomVid(size, opts) {
-  opts = opts || {}; // tmp - babel experiment. cleanup
+  opts = opts || {};
   const res = [];
   size = size || DefaultIdLength;
   const charBase = opts.charBase || DefaultCharBase; // todo: perhaps offer shortcut option to include the full 36 chars of lowercase letters and numbers
